@@ -96,9 +96,14 @@
     <div class="grid-item">50px high</div>
   </div>
   <textarea id="user-css" placeholder="Write your CSS code here..." rows="25">
-/* Write your CSS code below to make the purple items size, grow and shrink like the green ones.*/
+/* I added the CSS code below to make the purple items size, grow and shrink like the green ones.*/
 
 .grid-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-columns: auto 400px minmax(200px, 500px);
+  grid-auto-rows: 50px;
+  background-color: #ddd;
  
 }
   
